@@ -1,0 +1,70 @@
+body{
+  background-color: royalblue;
+}
+.slideshow-container{
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.mySlides img{
+  border: 5px solid white;
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+  -webkit-box-shadow: 0px 18px 23px 3px rgba(21, 23, 24, 0.51);
+  -moz-box-shadow: 0px 18px 23px 3px rgba(21, 23, 24, 0.51);
+  box-shadow: 0px 18px 23px 3px rgba(21, 23, 24, 0.51);
+  
+}
+.mySlides{
+  display: none;
+}
+.visible{
+  display: block;
+}
+.prev, .next {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: white;
+  font-size: 25px;
+  color:gray;
+  position: absolute;
+  cursor: pointer;
+  top:50%;
+  transform:  translateY(-50%);
+  -webkit-box-shadow: 0px 0px 21px 9px rgba(21, 23, 24, 0.49);
+  -moz-box-shadow: 0px 0px 21px 9px rgba(21, 23, 24, 0.49);
+  box-shadow: 0px 0px 21px 9px rgba(21, 23, 24, 0.49);
+}
+.next {
+  right: -15%;
+}
+.prev{
+  left: -15%;
+}
+.prev:hover, .next:hover{
+  background-color: #717171;
+}
+.dots{
+  text-align:center
+  
+}
+.dot{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+  
+}
+.active, .dot:hover{
+  background-color: #09244e;
+  outline: 1px solid #1C6EA4;
+}
